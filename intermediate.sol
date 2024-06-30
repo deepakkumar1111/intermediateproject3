@@ -5,8 +5,8 @@ This code for intermediateproject_3
 pragma solidity ^0.8.10;
 
 contract Deepak_intermediate_function{
-    string public tokenName = "DEEPAK LENDA";
-    string public tokenAbbr = "DL";
+    string public tokenName = "DEEPAK KUMAR";
+    string public tokenAbbr = "DK";
 
     address owner;
 
