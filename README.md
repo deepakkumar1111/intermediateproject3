@@ -3,6 +3,7 @@
 
 
 Contract initialization and variable declaration 
+
 ```
 //SPDX-License-Identifier: MIT
 
@@ -13,6 +14,8 @@ contract Deepak_intermediate_function{
     string public tokenAbbr = "DK";
 
     address owner;
+
+
 ```
 Address mapping and Contructor creation
 
@@ -22,8 +25,11 @@ Address mapping and Contructor creation
     constructor(){
         owner = msg.sender;
     }
+
+
 ```
 Get Balance Function
+
 ```
     function getBalance() external view returns (uint){
         return record[msg.sender];
@@ -31,13 +37,15 @@ Get Balance Function
     
 ```
 Mint function
+
 ```
     function mint(address to, uint amount) external {
         require(msg.sender == owner,"Only the owner can mint tokens");
         record[to] += amount;
     }
-```
 
+
+```
 Function to transfer token to desired address
 
 ```
@@ -46,9 +54,11 @@ Function to transfer token to desired address
         record[to] += amount;
         record[msg.sender] -= amount;
     }
-```
 
+
+```
 Function to burn token
+
 ```
     function burn(uint amount) external {
         require(record[msg.sender] >= amount,"Insufficient balance in this account");
