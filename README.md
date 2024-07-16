@@ -10,7 +10,7 @@ This project showcases an intermediate-level Solidity contract that includes fun
 
 ### Executing Program
 
-To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at [Remix](https://remix.ethereum.org/).
+__To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at [Remix](https://remix.ethereum.org/).__
 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., IntermediateProject3.sol). Copy and paste the following code into the file:
 
